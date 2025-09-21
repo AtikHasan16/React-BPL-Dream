@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   const playerPromise = async () => {
-    const response = await fetch("../public/player.json");
+    const response = await fetch("/public/player.json");
     return response.json();
   };
   const playerPromiseData = playerPromise();
