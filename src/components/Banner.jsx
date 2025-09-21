@@ -4,7 +4,7 @@ import BannerShadow from "../assets/bg-shadow.png";
 const Banner = () => {
   return (
     <div
-      className="bg-black rounded-3xl text-center text-white p-16 space-y-6 w-10/12 mx-auto bg-cover bg-no-repeat bg-center mb-10"
+      className="bg-black rounded-3xl text-center text-white p-16 space-y-6 w-10/12 mx-auto bg-cover bg-no-repeat bg-center mb-20"
       style={{ backgroundImage: `url(${BannerShadow})` }}
     >
       <img className="mx-auto" src={BannerLogo} alt="" />

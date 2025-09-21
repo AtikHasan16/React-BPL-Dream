@@ -5,7 +5,7 @@ const PlayerCard = ({ data }) => {
     <div>
       <div className="card  shadow-xl h-[500px] ">
         <figure>
-          <img className="w-lg" src={data.playerImage} alt={data.playerName} />
+          <img className="object-cover" src={data.playerImage} alt={data.playerName} />
         </figure>
         <div className="p-4">
           <div className="border-b border-gray-300 py-4">
@@ -17,7 +17,7 @@ const PlayerCard = ({ data }) => {
             </div>
           </div>
           <div>
-            <h1>Rating</h1>
+            <h1>Rating: {data.playerRating}</h1>
             <h1>{data.playerRole}</h1>
             <div className="flex justify-between items-center">
               <h1>Price: ${data.playerPrice}</h1>
