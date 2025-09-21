@@ -1,0 +1,110 @@
+[
+  {
+    "id": "player_001",
+    "playerImage": "https://i.ibb.co.com/JwGtBB97/virat.webp",
+    "playerName": "Virat Kohli",
+    "playerCountry": "India",
+    "playerRating": 9.2,
+    "playerRole": "Batsman",
+    "playerPrice": 2200000
+  },
+  {
+    "id": "player_002",
+    "playerImage": "https://i.ibb.co.com/d4VKYmQs/Pat.jpg",
+    "playerName": "Pat Cummins",
+    "playerCountry": "Australia",
+    "playerRating": 8.8,
+    "playerRole": "Fast Bowler",
+    "playerPrice": 1800000
+  },
+  {
+    "id": "player_003",
+    "playerImage": "https://i.ibb.co.com/9kcnPS3s/Kane.jpg",
+    "playerName": "Kane Williamson",
+    "playerCountry": "New Zealand",
+    "playerRating": 8.9,
+    "playerRole": "Batsman",
+    "playerPrice": 1600000
+  },
+  {
+    "id": "player_004",
+    "playerImage": "https://i.ibb.co.com/2Yd0yVbx/Ben-stoked.jpg",
+    "playerName": "Ben Stokes",
+    "playerCountry": "England",
+    "playerRating": 9.1,
+    "playerRole": "All-rounder",
+    "playerPrice": 2000000
+  },
+  {
+    "id": "player_005",
+    "playerImage": "https://i.ibb.co.com/gbLFJ09j/rashid.webp",
+    "playerName": "Rashid Khan",
+    "playerCountry": "Afghanistan",
+    "playerRating": 8.7,
+    "playerRole": "Leg-break Bowler",
+    "playerPrice": 1500000
+  },
+  {
+    "id": "player_006",
+    "playerImage": "https://i.ibb.co.com/Y7X8FZdQ/Babar.webp",
+    "playerName": "Babar Azam",
+    "playerCountry": "Pakistan",
+    "playerRating": 9.0,
+    "playerRole": "Batsman",
+    "playerPrice": 1700000
+  },
+  {
+    "id": "player_007",
+    "playerImage": "https://i.ibb.co.com/NdqF5MWR/Quiton.webp",
+    "playerName": "Quinton de Kock",
+    "playerCountry": "South Africa",
+    "playerRating": 8.5,
+    "playerRole": "Wicketkeeper-Batsman",
+    "playerPrice": 1400000
+  },
+  {
+    "id": "player_008",
+    "playerImage": "https://i.ibb.co.com/d4N4sY1r/Vumra.jpg",
+    "playerName": "Jasprit Bumrah",
+    "playerCountry": "India",
+    "playerRating": 9.3,
+    "playerRole": "Fast Bowler",
+    "playerPrice": 1900000
+  },
+  {
+    "id": "player_009",
+    "playerImage": "https://i.ibb.co.com/8DW9SXQG/smith.webp",
+    "playerName": "Steve Smith",
+    "playerCountry": "Australia",
+    "playerRating": 8.6,
+    "playerRole": "Batsman",
+    "playerPrice": 1750000
+  },
+  {
+    "id": "player_010",
+    "playerImage": "https://i.ibb.co.com/Xxw0grXv/Sakib.jpg",
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerRating": 8.4,
+    "playerRole": "All-rounder",
+    "playerPrice": 1300000
+  },
+  {
+    "id": "player_011",
+    "playerImage": "https://i.ibb.co.com/0jzXHsBL/Gayl.jpg",
+    "playerName": "Chris Gayle",
+    "playerCountry": "West Indies",
+    "playerRating": 8.0,
+    "playerRole": "Batsman",
+    "playerPrice": 1100000
+  },
+  {
+    "id": "player_012",
+    "playerImage": "https://i.ibb.co.com/S7rGFx27/trend-bolt.webp",
+    "playerName": "Trent Boult",
+    "playerCountry": "New Zealand",
+    "playerRating": 8.7,
+    "playerRole": "Fast Bowler",
+    "playerPrice": 1550000
+  }
+]
