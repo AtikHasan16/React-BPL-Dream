@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const PlayerCard = ({
   data,
@@ -8,20 +9,25 @@ const PlayerCard = ({
   setPlayerSelect,
 }) => {
   const [buttonSelect, setButtonSelect] = useState(false);
-  console.log(playerSelect);
+  // console.log(playerSelect);
 
   const handleChose = (data) => {
     // console.log(data);
 
     if (playerSelect.length === 6) {
-      return alert("6 Players already been selected");
+      return toast("6 Players already been selected");
     }
     if (availableCoin >= data.playerPrice) {
       setButtonSelect(true);
       setAvailableCoin(availableCoin - data.playerPrice);
+      toast(
+        `Player has been selected. Remaining coin ${
+          availableCoin - data.playerPrice
+        }`
+      );
       return setPlayerSelect([...playerSelect, data]);
     } else {
-      return alert("You don not have sufficient coin");
+      return toast("You don not have sufficient coin");
     }
   };
 

@@ -1,11 +1,11 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const SelectedCard = ({
-  player,
-  
-  removePlayer,
-}) => {
+const SelectedCard = ({ player, removePlayer }) => {
+
+
   const handleRemove = () => {
+   
     removePlayer(player);
   };
   return (

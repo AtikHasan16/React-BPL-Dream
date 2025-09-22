@@ -4,9 +4,10 @@ import AvailablePlayers from "./components/AvailablePlayers";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import SelectedPlayers from "./components/SelectedPlayers";
+import { ToastContainer, toast } from "react-toastify";
 
 const playerPromise = async () => {
-  const response = await fetch("/public/player.json");
+  const response = await fetch("/player.json");
   return response.json();
 };
 const playerPromiseData = playerPromise();
@@ -23,6 +24,7 @@ function App() {
   const removePlayer = (player) => {
     const filterSelect = playerSelect.filter((ply) => ply.id !== player.id);
     console.log(filterSelect);
+    toast(`Player Removed. Remaining player ${filterSelect.length}`);
 
     setPlayerSelect(filterSelect);
     setAvailableCoin(player.playerPrice + availableCoin);
@@ -89,6 +91,7 @@ function App() {
           ></SelectedPlayers>
         </Suspense>
       )}
+      <ToastContainer></ToastContainer>
     </>
   );
 }
