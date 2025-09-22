@@ -8,11 +8,14 @@ const PlayerCard = ({
   setPlayerSelect,
 }) => {
   const [buttonSelect, setButtonSelect] = useState(false);
-  // console.log(buttonSelect);
+  console.log(playerSelect);
 
   const handleChose = (data) => {
     // console.log(data);
 
+    if (playerSelect.length === 6) {
+      return alert("6 Players already been selected");
+    }
     if (availableCoin >= data.playerPrice) {
       setButtonSelect(true);
       setAvailableCoin(availableCoin - data.playerPrice);

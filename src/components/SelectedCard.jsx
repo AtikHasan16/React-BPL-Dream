@@ -2,8 +2,7 @@ import React from "react";
 
 const SelectedCard = ({
   player,
-  playerSelect,
-  setPlayerSelect,
+  
   removePlayer,
 }) => {
   const handleRemove = () => {

@@ -14,7 +14,7 @@ const playerPromiseData = playerPromise();
 function App() {
   // console.log(playerPromiseData);
   const [display, setDisplay] = useState(true);
-  const [availableCoin, setAvailableCoin] = useState(6000000);
+  const [availableCoin, setAvailableCoin] = useState(60000000);
   const [playerSelect, setPlayerSelect] = useState([]);
   // console.log(playerSelect);
 
