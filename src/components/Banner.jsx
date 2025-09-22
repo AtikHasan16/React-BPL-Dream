@@ -17,7 +17,7 @@ const Banner = () => {
 
       <a
         role="button"
-        className="btn bg-[#E7FE29] outline-2 outline-[#E7FE29] outline-offset-4 rounded-2xl"
+        className="btn text-gray-900 bg-[#E7FE29] outline-2 outline-[#E7FE29] outline-offset-4 rounded-2xl"
       >
         Claim Free Credit
       </a>

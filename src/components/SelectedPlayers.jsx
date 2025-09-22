@@ -14,7 +14,7 @@ const SelectedPlayers = ({ playerSelect, removePlayer }) => {
         ></SelectedCard>
       ))}
 
-      <button className="btn rounded-2xl outline-3 outline-offset-4 bg-[#E7FE29]">
+      <button className="btn rounded-2xl text-gray-900 outline-3 outline-offset-4 bg-[#E7FE29]">
         Add More Player
       </button>
     </div>
