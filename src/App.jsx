@@ -5,24 +5,30 @@ import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import SelectedPlayers from "./components/SelectedPlayers";
 
-function App() {
-  const playerPromise = async () => {
-    const response = await fetch("/public/player.json");
-    return response.json();
-  };
-  const playerPromiseData = playerPromise();
-  // console.log(playerPromiseData);
+const playerPromise = async () => {
+  const response = await fetch("/public/player.json");
+  return response.json();
+};
+const playerPromiseData = playerPromise();
 
+function App() {
+  // console.log(playerPromiseData);
   const [display, setDisplay] = useState(true);
+  const [availableCoin, setAvailableCoin] = useState(6000000);
+  // console.log(availableCoin);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar availableCoin={availableCoin}></Navbar>
       <Banner></Banner>
-      <div className="flex justify-between w-10/12 mx-auto">
+      <div className="flex justify-between w-10/12 mx-auto mb-5">
         <div>
-          <h1 className="text-4xl"> Available Players</h1>
-          <h1 className="text-4xl"> Selected Players</h1>
+          <h1 className={`text-3xl font-bold ${!display ? "hidden" : ""}`}>
+            Available Players
+          </h1>
+          <h1 className={`text-3xl font-bold ${display ? "hidden" : ""}`}>
+            Selected Players
+          </h1>
         </div>
         <div className="join ">
           <button
@@ -51,6 +57,8 @@ function App() {
             }
           >
             <AvailablePlayers
+              availableCoin={availableCoin}
+              setAvailableCoin={setAvailableCoin}
               playerPromiseData={playerPromiseData}
             ></AvailablePlayers>
           </Suspense>

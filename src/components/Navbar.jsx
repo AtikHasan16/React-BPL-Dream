@@ -1,7 +1,7 @@
 import navLogo from "../assets/logo.png";
 import coin from "../assets/Currency.png";
 
-export default function Navbar() {
+export default function Navbar({availableCoin}) {
   return (
     <div className="navbar  justify-between w-10/12 mx-auto text-lg my-6">
       <img className="btn btn-ghost btn-xl" src={navLogo} alt="" />
@@ -13,7 +13,7 @@ export default function Navbar() {
           <p>Schedules</p>
         </div>
         <button className="btn btn-lg rounded-xl">
-          {0} Coin <img src={coin} alt="" />
+          {availableCoin} Coin <img src={coin} alt="" />
         </button>
       </div>
     </div>

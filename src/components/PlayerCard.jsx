@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
-const PlayerCard = ({ data }) => {
+const PlayerCard = ({ data, availableCoin, setAvailableCoin }) => {
+  const [buttonSelect, setButtonSelect] = useState(false);
+
+  const handleChose = () => {
+    if (availableCoin >= data.playerPrice) {
+      setButtonSelect(true);
+      setAvailableCoin(availableCoin - data.playerPrice);
+    } else {
+      return alert("You don not have sufficient coin");
+    }
+  };
+
   return (
     <div>
       <div className="card  shadow-xl h-[500px] ">
         <figure>
-          <img className="object-cover" src={data.playerImage} alt={data.playerName} />
+          <img
+            className="object-cover"
+            src={data.playerImage}
+            alt={data.playerName}
+          />
         </figure>
         <div className="p-4">
           <div className="border-b border-gray-300 py-4">
@@ -21,7 +36,13 @@ const PlayerCard = ({ data }) => {
             <h1>{data.playerRole}</h1>
             <div className="flex justify-between items-center">
               <h1>Price: ${data.playerPrice}</h1>
-              <button className="btn">Choose Player</button>
+              <button
+                onClick={() => handleChose()}
+                disabled={buttonSelect}
+                className="btn"
+              >
+                {buttonSelect === true ? "Selected" : "Choose Player"}
+              </button>
             </div>
           </div>
         </div>
