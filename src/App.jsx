@@ -46,7 +46,7 @@ function App() {
         <div className="join ">
           <button
             onClick={() => setDisplay(true)}
-            className={`join-item btn rounded-l-xl border-r-0 ${
+            className={`join-item btn rounded-l-xl border-r-0 text-gray-900 ${
               display === true ? "bg-[#E7FE29]" : ""
             }`}
           >
@@ -54,7 +54,7 @@ function App() {
           </button>
           <button
             onClick={() => setDisplay(false)}
-            className={`join-item btn rounded-r-xl border-j-0 ${
+            className={`join-item btn rounded-r-xl text-gray-900 border-j-0 ${
               display === false ? "bg-[#E7FE29]" : ""
             }`}
           >
