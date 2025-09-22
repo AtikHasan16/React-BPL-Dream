@@ -1,15 +1,19 @@
-import React, { use } from "react";
+import PlayerCard from "./PlayerCard";
+import SelectedCard from "./SelectedCard";
 
-const SelectedPlayers = ({ playerPromiseData }) => {
-  const playerData = use(playerPromiseData);
+const SelectedPlayers = ({ playerSelect, setPlayerSelect, removePlayer }) => {
   // console.log(playerData);
 
   return (
-    <div className="border-2 rounded-4xl p-6 my-4">
-      {playerData.map((player) => (
-        <h1 className="text-4xl border-2 rounded-4xl p-6 my-4">
-          Selected Player Container {player.id}
-        </h1>
+    <div className="w-10/12 mx-auto mt-5 mb-20 space-y-4">
+      {playerSelect.map((player) => (
+        <SelectedCard
+        removePlayer={removePlayer}
+          playerSelect={playerSelect}
+          setPlayerSelect={setPlayerSelect}
+          key={player.id}
+          player={player}
+        ></SelectedCard>
       ))}
     </div>
   );

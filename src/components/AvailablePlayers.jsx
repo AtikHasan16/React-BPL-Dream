@@ -5,6 +5,8 @@ const AvailablePlayers = ({
   playerPromiseData,
   availableCoin,
   setAvailableCoin,
+  playerSelect,
+  setPlayerSelect,
 }) => {
   const data = use(playerPromiseData);
   //   console.log(data);
@@ -18,6 +20,8 @@ const AvailablePlayers = ({
             setAvailableCoin={setAvailableCoin}
             key={data.id}
             data={data}
+            playerSelect={playerSelect}
+            setPlayerSelect={setPlayerSelect}
           ></PlayerCard>
         );
       })}

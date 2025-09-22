@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 
-const PlayerCard = ({ data, availableCoin, setAvailableCoin }) => {
+const PlayerCard = ({
+  data,
+  availableCoin,
+  setAvailableCoin,
+  playerSelect,
+  setPlayerSelect,
+}) => {
   const [buttonSelect, setButtonSelect] = useState(false);
+  // console.log(buttonSelect);
 
-  const handleChose = () => {
+  const handleChose = (data) => {
+    // console.log(data);
+
     if (availableCoin >= data.playerPrice) {
       setButtonSelect(true);
       setAvailableCoin(availableCoin - data.playerPrice);
+      return setPlayerSelect([...playerSelect, data]);
     } else {
       return alert("You don not have sufficient coin");
     }
@@ -37,11 +47,11 @@ const PlayerCard = ({ data, availableCoin, setAvailableCoin }) => {
             <div className="flex justify-between items-center">
               <h1>Price: ${data.playerPrice}</h1>
               <button
-                onClick={() => handleChose()}
+                onClick={() => handleChose(data)}
                 disabled={buttonSelect}
                 className="btn"
               >
-                {buttonSelect === true ? "Selected" : "Choose Player"}
+                {buttonSelect ? "Selected" : "Choose Player"}
               </button>
             </div>
           </div>

@@ -1,6 +1,6 @@
 [
   {
-    "id": "player_001",
+    "id": 1,
     "playerImage": "https://i.ibb.co.com/JwGtBB97/virat.webp",
     "playerName": "Virat Kohli",
     "playerCountry": "India",
@@ -9,7 +9,7 @@
     "playerPrice": 2200000
   },
   {
-    "id": "player_002",
+    "id": 2,
     "playerImage": "https://i.ibb.co.com/d4VKYmQs/Pat.jpg",
     "playerName": "Pat Cummins",
     "playerCountry": "Australia",
@@ -18,7 +18,7 @@
     "playerPrice": 1800000
   },
   {
-    "id": "player_003",
+    "id": 3,
     "playerImage": "https://i.ibb.co.com/9kcnPS3s/Kane.jpg",
     "playerName": "Kane Williamson",
     "playerCountry": "New Zealand",
@@ -27,7 +27,7 @@
     "playerPrice": 1600000
   },
   {
-    "id": "player_004",
+    "id": 4,
     "playerImage": "https://i.ibb.co.com/2Yd0yVbx/Ben-stoked.jpg",
     "playerName": "Ben Stokes",
     "playerCountry": "England",
@@ -36,7 +36,7 @@
     "playerPrice": 2000000
   },
   {
-    "id": "player_005",
+    "id": 5,
     "playerImage": "https://i.ibb.co.com/gbLFJ09j/rashid.webp",
     "playerName": "Rashid Khan",
     "playerCountry": "Afghanistan",
@@ -45,7 +45,7 @@
     "playerPrice": 1500000
   },
   {
-    "id": "player_006",
+    "id": 6,
     "playerImage": "https://i.ibb.co.com/Y7X8FZdQ/Babar.webp",
     "playerName": "Babar Azam",
     "playerCountry": "Pakistan",
@@ -54,7 +54,7 @@
     "playerPrice": 1700000
   },
   {
-    "id": "player_007",
+    "id": 7,
     "playerImage": "https://i.ibb.co.com/NdqF5MWR/Quiton.webp",
     "playerName": "Quinton de Kock",
     "playerCountry": "South Africa",
@@ -63,7 +63,7 @@
     "playerPrice": 1400000
   },
   {
-    "id": "player_008",
+    "id": 8,
     "playerImage": "https://i.ibb.co.com/d4N4sY1r/Vumra.jpg",
     "playerName": "Jasprit Bumrah",
     "playerCountry": "India",
@@ -72,7 +72,7 @@
     "playerPrice": 1900000
   },
   {
-    "id": "player_009",
+    "id": 9,
     "playerImage": "https://i.ibb.co.com/8DW9SXQG/smith.webp",
     "playerName": "Steve Smith",
     "playerCountry": "Australia",
@@ -81,7 +81,7 @@
     "playerPrice": 1750000
   },
   {
-    "id": "player_010",
+    "id": 10,
     "playerImage": "https://i.ibb.co.com/Xxw0grXv/Sakib.jpg",
     "playerName": "Shakib Al Hasan",
     "playerCountry": "Bangladesh",
@@ -90,7 +90,7 @@
     "playerPrice": 1300000
   },
   {
-    "id": "player_011",
+    "id": 11,
     "playerImage": "https://i.ibb.co.com/0jzXHsBL/Gayl.jpg",
     "playerName": "Chris Gayle",
     "playerCountry": "West Indies",
@@ -99,7 +99,7 @@
     "playerPrice": 1100000
   },
   {
-    "id": "player_012",
+    "id": 12,
     "playerImage": "https://i.ibb.co.com/S7rGFx27/trend-bolt.webp",
     "playerName": "Trent Boult",
     "playerCountry": "New Zealand",

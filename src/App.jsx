@@ -15,7 +15,18 @@ function App() {
   // console.log(playerPromiseData);
   const [display, setDisplay] = useState(true);
   const [availableCoin, setAvailableCoin] = useState(6000000);
+  const [playerSelect, setPlayerSelect] = useState([]);
+  // console.log(playerSelect);
+
   // console.log(availableCoin);
+
+  const removePlayer = (player) => {
+    const filterSelect = playerSelect.filter((ply) => ply.id !== player.id);
+    console.log(filterSelect);
+
+    setPlayerSelect(filterSelect);
+    setAvailableCoin(player.playerPrice + availableCoin);
+  };
 
   return (
     <>
@@ -27,14 +38,14 @@ function App() {
             Available Players
           </h1>
           <h1 className={`text-3xl font-bold ${display ? "hidden" : ""}`}>
-            Selected Players
+            Selected Players ({playerSelect.length} / 6)
           </h1>
         </div>
         <div className="join ">
           <button
             onClick={() => setDisplay(true)}
             className={`join-item btn rounded-l-xl border-r-0 ${
-              display === true ? "bg-[#E7FE29]" : "bg-base"
+              display === true ? "bg-[#E7FE29]" : ""
             }`}
           >
             Available
@@ -42,10 +53,10 @@ function App() {
           <button
             onClick={() => setDisplay(false)}
             className={`join-item btn rounded-r-xl border-j-0 ${
-              display === false ? "bg-[#E7FE29]" : "bg-base"
+              display === false ? "bg-[#E7FE29]" : ""
             }`}
           >
-            Selected <span>{0}</span>
+            Selected <span>({playerSelect.length})</span>
           </button>
         </div>
       </div>
@@ -60,21 +71,23 @@ function App() {
               availableCoin={availableCoin}
               setAvailableCoin={setAvailableCoin}
               playerPromiseData={playerPromiseData}
+              playerSelect={playerSelect}
+              setPlayerSelect={setPlayerSelect}
             ></AvailablePlayers>
           </Suspense>
         </div>
       ) : (
-        <div className="flex justify-center">
-          <Suspense
-            fallback={
-              <span className="loading loading-spinner loading-xl"></span>
-            }
-          >
-            <SelectedPlayers
-              playerPromiseData={playerPromiseData}
-            ></SelectedPlayers>
-          </Suspense>
-        </div>
+        <Suspense
+          fallback={
+            <span className="loading loading-spinner loading-xl"></span>
+          }
+        >
+          <SelectedPlayers
+            removePlayer={removePlayer}
+            playerSelect={playerSelect}
+            setPlayerSelect={setPlayerSelect}
+          ></SelectedPlayers>
+        </Suspense>
       )}
     </>
   );
