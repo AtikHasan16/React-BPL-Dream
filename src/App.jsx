@@ -46,16 +46,16 @@ function App() {
         <div className="join ">
           <button
             onClick={() => setDisplay(true)}
-            className={`join-item btn rounded-l-xl border-r-0 text-gray-900 ${
-              display === true ? "bg-[#E7FE29]" : ""
+            className={`join-item btn rounded-l-xl border-r-0 ${
+              display === true ? "bg-[#E7FE29] text-gray-900" : ""
             }`}
           >
             Available
           </button>
           <button
             onClick={() => setDisplay(false)}
-            className={`join-item btn rounded-r-xl text-gray-900 border-j-0 ${
-              display === false ? "bg-[#E7FE29]" : ""
+            className={`join-item btn rounded-r-xl  border-j-0 ${
+              display === false ? "bg-[#E7FE29] text-gray-900" : ""
             }`}
           >
             Selected <span>({playerSelect.length})</span>
