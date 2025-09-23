@@ -30,6 +30,10 @@ function App() {
     setAvailableCoin(player.playerPrice + availableCoin);
   };
 
+  const handleAvailable = () => {
+    setDisplay(true);
+  };
+
   return (
     <>
       <Navbar availableCoin={availableCoin}></Navbar>
@@ -45,7 +49,7 @@ function App() {
         </div>
         <div className="join ">
           <button
-            onClick={() => setDisplay(true)}
+            onClick={() => handleAvailable()}
             className={`join-item btn rounded-l-xl border-r-0 ${
               display === true ? "bg-[#E7FE29] text-gray-900" : ""
             }`}
@@ -85,6 +89,7 @@ function App() {
           }
         >
           <SelectedPlayers
+            handleAvailable={handleAvailable}
             removePlayer={removePlayer}
             playerSelect={playerSelect}
             setPlayerSelect={setPlayerSelect}
